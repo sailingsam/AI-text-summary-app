@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AI Text Summarizer</title>
+    <link rel="stylesheet" href="stylesheet.css">   
+  </head>
+  <body>
+    <h1>AI Text Summarizer</h1>
+    <p> Welcome to the AI Text Summarizer App! This app leverages the power of Artificial Intelligence APIs to provide concise summaries of long texts. Whether you have a lengthy article, research paper, or any other text document that you want to summarize quickly, our app can assist you. </p>
+    <p>Min length is 200 chars. Max length is 100,000 chars. </p>
+    <div class="container">
+      <div class="text-box">
+        <textarea class="input-textarea" id="text_to_summarize" name="text_to_summarize" placeholder="Paste in some text to summarize. (Min length is 200 chars. Max length is 100,000 chars.)" maxlength="100000"></textarea>
+        <button id="submit-button" class="submit-button" >
+          <span class="submit-button-text">Summarize</span>
+        </button>
+      </div>
+      <div class="text-box">
+      <textarea id="summary" name="summarized_text" placeholder="Summarized text will appearhere"> </textarea>
+      </div>
+    </div>
+    
+    <div class="connect">
+      <h2 style="color:white;">Connect with me: </h2>
+      <div class="card">
+        <a href="https://www.linkedin.com/in/sailingsam/" class="social-link4" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,255.99132,255.99132">
+          <g transform="translate(-43.51852,-43.51852) scale(1.34,1.34)"><g fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M32.47651,223.51481v-191.0383h191.0383v191.0383z" id="bgRectangle"></path></g><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(4,4)"><path d="M48,8h-32c-4.418,0 -8,3.582 -8,8v32c0,4.418 3.582,8 8,8h32c4.418,0 8,-3.582 8,-8v-32c0,-4.418 -3.582,-8 -8,-8zM24,47h-5v-20h5zM24.029,23.009c-0.647,0.66 -1.491,0.991 -2.529,0.991c-1.026,0 -1.865,-0.341 -2.519,-1.023c-0.654,-0.682 -0.981,-1.519 -0.981,-2.509c0,-1.02 0.327,-1.852 0.981,-2.498c0.654,-0.647 1.493,-0.97 2.519,-0.97c1.038,0 1.882,0.323 2.529,0.969c0.647,0.646 0.971,1.479 0.971,2.499c0,1.034 -0.324,1.881 -0.971,2.541zM47,47h-5v-11.113c0,-3.099 -1.786,-4.887 -4,-4.887c-1.067,0 -2.274,0.648 -2.965,1.469c-0.691,0.821 -1.035,1.862 -1.035,3.125v11.406h-5v-20h5v3.164h0.078c1.472,-2.435 3.613,-3.644 6.426,-3.652c3.996,-0.012 6.496,2.988 6.496,8.242z"></path></g></g></g>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/jainsaksham1004/" class="social-link1" target="_blank">
+          <svg viewBox="0 0 16 16" class="bi bi-instagram" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg" style="color: white"> <path fill="white" d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path> </svg>
+        </a>
+        <a href="https://x.com/jainsaksham1004" class="social-link2" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,255.99132,255.99132">
+        <g fill-opacity="0" fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,255.99132v-255.99132h255.99132v255.99132z" id="bgRectangle"></path></g><g fill="#fffcfc" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M17.47656,2.99023c-0.2942,0.00949 -0.56928,0.1481 -0.75195,0.37891l-4.21484,5.18555l-3.45313,-4.7832c-0.35,-0.484 -0.91081,-0.77148 -1.50781,-0.77148h-3.4707c-0.658,0 -1.0393,0.7463 -0.6543,1.2793l5.91016,8.18359l-5.60937,6.90625c-0.239,0.2756 -0.30898,0.65947 -0.1826,1.00167c0.12637,0.34221 0.42904,0.58846 0.7898,0.64258c0.36076,0.05412 0.72236,-0.09248 0.94359,-0.38253l5.27344,-6.48828l4.39453,6.08594c0.35,0.484 0.91081,0.77148 1.50781,0.77148h3.4707c0.658,0 1.0393,-0.7463 0.6543,-1.2793l-6.85156,-9.48828l4.55078,-5.60156c0.25245,-0.30234 0.30394,-0.72469 0.13151,-1.07882c-0.17243,-0.35413 -0.53666,-0.57407 -0.93034,-0.5618zM6.41016,5h1.06641l10.11133,14h-1.06445z"></path></g></g>
+        </svg>             </a>
+        
+      </div>
+    </div>
+    
+    <section class="cta-section">
+      <div class="cta-content">
+        <div class="cta-text">
+        <h2>Curious how I build this app?</h2>
+        <p>Join Postman's Student Program and elevate your software development and API knowledge to help you in your career.</p>
+          <a href="https://www.postman.com/student-program/student-expert/?utm_campaign=CGC&utm_medium=referral&utm_source=internal&utm_term=pbl-skilljar&utm_content=pbl_summariser_app" class="cta-button" target="_blank" rel="noopener nofollow">Register as student</a>
+        </div>
+        <img src="images/learning.png"></img>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
